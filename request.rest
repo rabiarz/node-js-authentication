@@ -1,18 +1,28 @@
 GET http://localhost:3000/users
 
-
 ###
 
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Rabia", "password": "psword"
+  "name": "Rabia", "password": "pssword"
 }
 
 ###
 
-POST http://localhost:3000/users
+POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {"name": "Soraya", "password": "ff333"}
+
+
+###
+
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "hello world", "content": "this is test"
+}
